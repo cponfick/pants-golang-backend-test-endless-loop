@@ -1,0 +1,30 @@
+# This file is placed here because some ideas (vsCode) are looking for it here
+[tool.black]
+skip-string-normalization = true
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+known_first_party = ["mdl_*"]
+default_section = "THIRDPARTY"
+profile = "black"
+line_length=79
+skip=[".venv"]
+
+[tool.mypy]
+strict = true 
+ignore_missing_imports = true
+warn_unused_ignores = true

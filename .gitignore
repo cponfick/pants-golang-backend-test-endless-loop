@@ -1,0 +1,46 @@
+# Dependency directories
+node_modules/
+cdk.out/
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache/
+htmlcov/
+
+# webpack
+stats.json
+
+# VSCode
+.vscode
+
+# Fleet
+.fleet
+
+# PyCharm
+out/
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environment
+.venv
+.lock/
+infrastructure/config/cp.yml
+layer/
+
+
+# setup: cfg --> will be created dynamically with data from the github-action
+src/setup.cfg
+*.egg-info
+dist
+
+# Pants workspace files
+/.pants.*
+/dist/
+/.pids
